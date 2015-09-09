@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
 	<meta charset="UTF-8">
 	<title>Formulier</title>
@@ -20,107 +20,102 @@
 		</article>
 		<form>
 			<fieldset>
-				<p>Contactgegevens:</p>
-				<label for="naam">Naam *</label>
-				<input type="text" id="naam" required>
+				<legend>Contactgegevens</legend>
+				<label for="naam">Naam</label>
+				<input type="text" id="naam" name="Naam">
 
 				<label for="bedrijf">Bedrijf</label>
 				<input type="text" id="bedrijf">
 
-				<label for="adres">Adres *</label>
-				<input type="text" id="adres" required>
+				<label for="adres">Adres</label>
+				<input type="text" id="adres">
 
-				<label for="postcode">Postcode *</label>
-				<input type="number" id="postcode" required>
+				<label for="postcode">Postcode</label>
+				<input type="number" id="postcode">
 
-				<label for="plaats">Plaats *</label>
-				<input type="text" id="plaats" required>
+				<label for="plaats">Plaats</label>
+				<input type="text" id="plaats">
 
 				<label for="telefoon">Telefoon</label>
 				<input type="tel" id="telefoon">
 
-				<label for="email">E-mail *</label>
-				<input type="email" id="email" required>
+				<label for="email">E-mail</label>
+				<input type="email" id="email">
 				
-				<p>Ik wil mij aanmelden:</p>
-				<input type="radio">Voor een project
-				<input type="radio">Als stagebedrijf
+				<label>Ik wil mij aanmelden:</label>
+				<input type="radio" name="Ik wil mij aanmelden:" value="Voor een project">Voor een project
+				<input type="radio" name="Ik wil mij aanmelden:" value="Als stagebedrijf">Als stagebedrijf
+			</fieldset>
+			<fieldset>
+				<legend>Project</legend>
+				<label for="titelProject">Titel project</label>
+				<input type="text" id="titelProject" name="Titel project">
 
-				<input type="submit">
+				<label for="opdrachtOmschrijving">Opdrachtomschrijving</label>
+				<textarea id="opdrachtOmschrijving" name="Opdrachtomschrijving"></textarea>
+
+				<label for="doelgroepOmschrijving">Doelgroepomschrijving</label>
+				<textarea id="doelgroepOmschrijving" name="Doelgroepomschrijving"></textarea>
+
+				<label for="doelstelling">Doelstelling / intentie van het project</label>
+				<textarea id="doelstelling" name="Doestelling / intentie van het project"></textarea>
+
+				<label for="looptijd">Looptijd</label>
+				<input type="text" id="looptijd" name="looptijd">
+
+				<label for="deadlineProject">Deadline</label>
+				<input type="date" id="deadlineProject">
+
+				<label>Geschikt voor:</label>
+				<input type="radio" name="Geschikt voor" value="Eerstejaarsstudenten">Eerstejaarsstudenten
+				<input type="radio" name="Geschikt voor" value="Tweedejaarsstudenten">Tweedejaarsstudenten
+				<input type="radio" name="Geschikt voor" value="Derdejaarsstudenten">Derdejaarsstudenten
+				<input type="radio" name="Geschikt voor" value="Afstudeerstudenten">Afstudeerstudenten
+				<input type="radio" name="Geschikt voor">Onbekend
+
+				<label for="opmerkingenProject">Opmerkingen</label>
+				<textarea id="opmerkingenProject" name="Opmerkingen"></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Stage</legend>
+				<label>Geschikt voor:</label>
+				<input type="radio" name="Geschikt voor" value="Tweedejaarsstudenten">Tweedejaarsstudenten
+				<input type="radio" name="Geschikt voor" value="Afstudeerstudenten">Afstudeerstudenten
+				<input type="radio" name="Geschikt voor" value="Onbekend">Onbekend
+
+				<label>Hoelang is de stage?</label>
+				<input type="radio" name="Hoelang is de stage?" value="10 weken ">10 weken 
+				<input type="radio" name="Hoelang is de stage?" value="20 weken ">20 weken 
+
+				<label for="beginDatumStage">Begindatum</label>
+				<input type="date" id="beginDatumStage" name="Begindatum">
+
+				<label for="beschrijvingWerkzaamhedenStage">Beschrijving werkzaamheden</label>
+				<textarea id="beschrijvingWerkzaamhedenStage" name="Beschrijving werkzaamheden"></textarea>
+
+				<label>Beschrijving stagebedrijf</label>
+				<label for="bedrijfsnaam">Bedrijfsnaam</label>
+				<input type="text" id="bedrijfsnaam" name="Bedrijfsnaam">
+
+				<label for="adresBedrijf">Adres</label>
+				<input type="text" id="adresBedrijf" name="Adres">
+				
+				<label for="postcodeBedrijf">Postcode</label>
+				<input type="text" id="postcodeBedrijf" name="Postcode">
+				
+				<label for="plaatsBedrijf">Plaats</label>
+				<input type="text" id="plaatsBedrijf" name="Plaats">
+
+				<label for="sectorBedrijf">Sector</label>
+				<input type="text" id="sectorBedrijf" name="Sector">
+
+				<label for="businessBedrijf">Core Business</label>
+				<input type="text" id="businessBedrijf" name="Core Business">
+
+				<label for="OpmerkingenStage">Opmerkingen</label>
+				<textarea id="OpmerkingenStage" name="Opmerkingen"></textarea>
 			</fieldset>
 		</form>
-		<table>
-			<tr>
-				<th>Project</th>
-				<th>Stage</th>
-			</tr>
-			<tr>
-				<td>
-					<ol>
-						<li>Titel</li>
-						<li>Opdrachtomschrijving</li>
-						<li>Doelgroepomschrijving</li>
-						<li>Doelstelling/ intentie van het project</li>
-						<li>Looptijd</li>
-						<li>Deadline</li>
-					</ol>
-				</td>
-				<td>Geschikt voor
-					<ol> 
-						<li>Tweedejaars studenten</li>
-						<li>Afstudeer studenten</li>
-						<li>Onbekend</li>
-					</ol>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<ol>
-						<li>eerstejaars studenten</li>
-						<li>tweedejaars studenten</li>
-						<li>derdejaars studenten</li>
-						<li>afstudeer studenten</li>
-						<li>onbekend</li>
-					</ol>
-				</td>
-				<td>
-					<ol>
-						<li>Hoe lang is de stage?
-							<ul>
-						        <li>10 weken</li>
-						        <li>20 weken</li>
-						    </ul>
-						</li>
-						<li>Begin datum</li>
-					</ol>
-				</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>Beschrijving werkzaamheden:
-					<ol>
-						<li>Beschrijving stagewerkzaamheden</li>
-					</ol>
-				</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>
-					<ol>
-						<li>Bedrijfsnaam</li>
-						<li>Adres</li>
-						<li>Postcode</li>
-						<li>Plaats</li>
-						<li>Sector</li>
-						<li>Core Business</li>
-					</ol>
-				</td>
-			</tr>
-			<tr>
-				<td>Opmerking</td>
-				<td>Opmerking</td>
-			</tr>
-		</table>
 	</main>
 </body>
 </html>
