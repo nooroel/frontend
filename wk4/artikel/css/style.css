@@ -1,0 +1,284 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+body > header{
+	background: #ffcc00;	
+}
+a{
+	transition: all 0.5s ease;
+	text-decoration: none;
+	text-shadow: 3px 3px 0px rgba(150, 150, 150, 0.42);
+	color: #ffcc00;
+}
+a:hover{
+	text-shadow: none;
+}
+h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	font-size: 2em;
+}
+p{
+	line-height: 1.8em;
+	color: #333;
+}
+
+main article{
+	margin: 0 auto;
+	padding: 2em 0;
+	width: 80%;
+}
+main article img{
+	width: 100%;
+}
+main article footer{
+	border: 1px solid #ffcc00;
+	border-radius: .5em;
+	padding: 1.2em;
+	background: #ffedcd;
+	-webkit-box-shadow: 13px 10px 40px 0px rgba(0,0,0,0.11);
+	-moz-box-shadow: 13px 10px 40px 0px rgba(0,0,0,0.11);
+	box-shadow: 13px 10px 40px 0px rgba(0,0,0,0.11);
+}
+main article footer h4,
+main article footer p{
+	margin: 0;
+	font-size: .9em;
+}
+main article footer a{
+	color: #333;
+	text-shadow: none;
+}
+
+nav ul li a{
+	text-shadow: none !important;
+}
+section.related{
+	background: #f5f5f5;
+	padding: 2em 0;
+
+}
+section.related h2{
+	text-align: center;
+}
+section.related h3 ~ p{
+	margin: 0;
+	font-size: .8em;
+}
+
+section.related article{
+	width: 50%;
+	margin: 0 auto;
+}
+section.related article > p a{
+	display: block;
+}
+a[rel="bookmark"]{
+	display: block;
+	background: #ffcc00;
+	color: #fff;
+	text-align: center;
+	text-shadow: none;
+	margin: .5em 0;
+	padding: .6em 0;
+}
+a[rel="bookmark"]:hover{
+	transform: translateX(10px) rotate(10deg) translateY(5px);
+}
+aside{
+	width: 80%;
+	margin: 0 auto;
+	padding: 2em 0;
+	/*display: flex;
+	flex-wrap: no-wrap;
+	justify-content: space-between;*/
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	justify-content: space-between;
+	align-content: stretch;
+}
+aside section:nth-of-type(1){
+	margin-right: 1.5em;
+}
+aside section article{
+	border-bottom: 1px solid #f5f5f5;
+	margin-bottom: 2em;
+	flex-shrink: 1;
+}
+aside section article:last-of-type{
+	border: 0;
+}
+aside h2 > a{
+	text-shadow: none;
+}
+body > footer{
+	background: #444444;
+	text-align: center;
+}
+body > footer h2{
+	color: #858585;
+	text-align: center;
+}
+body > footer p{
+	color: #d3d3d3;
+}
+footer > section{
+	width: 80%;
+	margin: 3em auto 0;
+}
+section#sitemap > ul{
+	padding-left: 0;
+}
+section#sitemap > ul > li{
+	margin-bottom: 2em;
+}
+section#sitemap > ul > li > a{
+	color: #f5f5f5;
+}
+section#sitemap > ul > li > ul{
+	padding-left: 0;
+}
+body > footer ul li{
+	list-style: none;
+}
+section#contact h2 ~ p{
+	margin: 0;
+	padding: 0;
+	font-size: .8em;
+}
+section#credits{
+	font-size: .8em;
+}
+
+p#feedback{
+	margin: 0;
+	padding: 1em 0;
+	width: 100%;
+	background: #333;
+	text-align: center;
+}
+p#feedback a{
+	display: inline-block;
+	width: 100%;
+}
+
+
+@media only screen and (max-width: 40em) {
+	body > header{
+		padding: 2em 0;
+	}
+	body > header h1{
+		font-size: 1em;
+		text-align: center;
+	}
+	body > header p{
+		display: none;
+	}
+	body > header figure{
+		text-align: center;
+	}
+	body > header img{
+		width: 80%;
+	}
+
+	nav ul{
+		list-style: none;
+		width: 80%;
+		margin: 0 auto;
+		padding-left: 0;
+		text-align: center;
+	}
+	nav ul li{
+		display: inline-block;
+		margin: 0 0 1em;
+	}
+	nav ul li a{
+		display: inline-block;
+		border-radius: .2em;
+		padding: .6em .7em;
+		background: #1a1a18;
+		color: #fff;
+		font-size: 1em;
+		font-weight: 300;
+	}
+		nav ul li a:visited{
+			color: #fff;
+		}
+		nav ul li a:hover{
+			background: #454542;
+		}
+
+	body > header form{
+		display: none;
+	}
+
+	aside{
+		display: block;
+	}
+
+}
+@media only screen and (min-width: 40.063em) {
+	body > header{
+		padding: 2em 0;
+	}
+	body > header h1{
+		font-size: 1em;
+		text-align: center;
+	}
+	body > header p{
+		display: none;
+	}
+	body > header figure{
+		text-align: center;
+	}
+	body > header img{
+		width: 80%;
+	}
+
+	body > header form{
+		display: none;
+	}
+
+	nav ul{
+		list-style: none;
+		width: 80%;
+		margin: 0 auto;
+		padding-left: 0;
+		text-align: center;
+	}
+	nav ul li{
+		display: inline-block;
+		margin: 0 0 1em;
+	}
+	nav ul li a{
+		display: inline-block;
+		border-radius: .2em;
+		padding: .6em .7em;
+		background: #1a1a18;
+		color: #fff;
+		font-size: 1em;
+		font-weight: 300;
+	}
+		nav ul li a:visited{
+			color: #fff;
+		}
+		nav ul li a:hover{
+			background: #454542;
+		}
+}
+
+
+@media only screen and (min-width: 64.063em) {
+
+}
+
