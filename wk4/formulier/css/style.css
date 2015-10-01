@@ -14,7 +14,7 @@ body > header{
 a{
 	transition: all 0.5s ease;
 	text-decoration: none;
-	text-shadow: 3px 3px 0px rgba(150, 150, 150, 0.42);
+	text-shadow: 3px 3px 0px rgba(150, 150, 150, 0.3);
 	color: #ffcc00;
 }
 a:hover{
@@ -89,6 +89,16 @@ section.related h3 ~ p{
 section.related article > p a{
 	display: block;
 }
+section.related section h4{
+	margin-bottom: 0;
+}
+section.related section ul{
+	margin-top: 0;
+	padding-left: 0;
+}
+section.related section ul li{
+	list-style: none;
+}
 a[rel="bookmark"]{
 	display: block;
 	background: #ffcc00;
@@ -105,10 +115,6 @@ aside{
 	width: 80%;
 	margin: 0 auto;
 	padding: 2em 0;
-	/*display: flex;
-	flex-wrap: no-wrap;
-	justify-content: space-between;*/
-
 	display: flex;
 	flex-direction: row;
 	flex-wrap: no-wrap;
@@ -230,6 +236,13 @@ input[type="submit"]{
 label span{
 	display: inline-block;
 	margin-bottom: .5em;
+}
+dt{
+	font-weight: 700;
+	margin-top: 1em;
+}
+dd{
+	margin-left: 0;
 }
 
 @media only screen and (max-width: 40em) {
