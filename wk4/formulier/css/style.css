@@ -117,7 +117,7 @@ aside{
 	padding: 2em 0;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: no-wrap;
+	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-content: stretch;
 }
@@ -305,6 +305,9 @@ dd{
 	}
 	aside{
 		display: block;
+	}
+	aside section:nth-of-type(1){
+		margin-right: 0em;
 	}
 }
 @media only screen and (min-width: 40.063em) {
