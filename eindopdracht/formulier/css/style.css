@@ -264,8 +264,7 @@ input[type="email"],
 input[type="tel"],
 input[type="date"],
 input[type="checkbox"],
-textarea
-{
+textarea{
 	width: 91%;
 	margin: .5em 0 1em;
 	padding: .8em;
@@ -281,14 +280,15 @@ input[type="checkbox"]{
 }
 input[type="submit"]{
 	border-radius: .2em;
-	border: 0;
-	padding: .6em .7em;
-	background: #1a1a18;
-	color: #fff;
-	font-size: 1em;
+    border: 0;
+    padding: .6em .7em;
+    margin: 2em 0 1em;
+    background: #1a1a18;
+    color: #fff;
+    font-size: 1.3em;
 }
 label span{
-	display: inline-block;
+	/*display: block;*/
 	margin-bottom: .5em;
 }
 dt{
@@ -316,7 +316,12 @@ dd{
 	}
 	section.related article {
 	    width: 80%;
+	    margin: 3em auto 0;
+	}
+	section.related h2 {
+	    width: 80%;
 	    margin: 0 auto;
+	    text-align: left;
 	}
 	form{
 		width: 80%;
