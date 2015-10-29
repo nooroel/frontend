@@ -341,7 +341,13 @@ dd{
 		margin: 0;
 	    padding: 0;
 	    display: flex;
-	    justify-content: space-between;
-	    list-style: none;
+	    align-items: center;
+	    justify-content: center;
+	    flex-wrap: wrap;
+	}
+	main > p,
+	form,
+	section.related article{
+		width: 70%;
 	}
 }

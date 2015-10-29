@@ -278,11 +278,13 @@ input[type="submit"] {
 	video{
 		width: 100%;
 	}
-	
 	nav ul {
 	    display: flex;
 	    align-items: center;
 	    justify-content: center;
+	    flex-wrap: wrap;
 	}
-
+	main article{
+		width: 70%;
+	}
 }
