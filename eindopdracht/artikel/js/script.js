@@ -1,5 +1,5 @@
 var currentPage = document.querySelector('nav ul li:nth-of-type(1) a');
-var profiel = document.querySelector('body header p')
+var searchBox = document.querySelector('body header form')
 
 currentPage.classList.add('activeLink');
-profiel.classList.remove('to-profile');
+searchBox.style.display = ("none")

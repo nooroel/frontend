@@ -29,10 +29,6 @@ body > header{
 		width: 80%;
 	}
 
-	body > header form{
-		display: none;
-	}
-
 .activeLink{
 	font-weight: 500;
 }
@@ -217,7 +213,15 @@ section#contact h2 ~ p{
 section#credits{
 	font-size: .8em;
 }
-
+input[type="submit"] {
+    border-radius: .2em;
+    border: 0;
+    padding: .6em .7em;
+    margin: 2em 0 1em;
+    background: #1a1a18;
+    color: #fff;
+    font-size: 1.3em;
+}
 #feedback{
 	margin: 0;
 	padding: 1em 0;
@@ -225,10 +229,10 @@ section#credits{
 	background: #333;
 	text-align: center;
 }
-#feedback a{
-	display: inline-block;
-	width: 100%;
-}
+	#feedback a{
+		display: inline-block;
+		width: 100%;
+	}
 
 
 @media only screen and (max-width: 40em) {
@@ -263,6 +267,9 @@ section#credits{
 	}
 	aside section:nth-of-type(1){
 		margin-right: 0em;
+	}
+	section.related h3{
+		font-size: 1.5em;
 	}
 
 }
